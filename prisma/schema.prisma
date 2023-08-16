@@ -16,7 +16,6 @@ model UserDetails {
   updatedAt DateTime @updatedAt
 
   email String @unique
-  hash String
 
   name String
   gender String
@@ -27,6 +26,5 @@ model UserDetails {
   education String
   preferedModeOfContact String
  
-
   @@map("userDetails")
 }
