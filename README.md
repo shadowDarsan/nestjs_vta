@@ -36,7 +36,7 @@ This README provides instructions on setting up a Nest.js project with a Dockeri
    This will launch the PostgreSQL database for Prisma in a Docker container.
 ## Prisma Setup
 
-1.  
+1.  Prisma migrations
 ```bash
 npx prisma migrate dev
 ```
