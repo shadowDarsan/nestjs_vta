@@ -44,7 +44,7 @@ This README provides instructions on setting up a Nest.js project with a Dockeri
    ```
 
 2. Access the application at `http://localhost:3000`.
-
+3. Create .env file and add `DATABASE_URL="postgresql://postgres:password@localhost:5434/nest?schema=public"`
 ## API Endpoints
 
 The following API endpoints are available:
