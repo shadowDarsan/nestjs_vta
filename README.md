@@ -30,21 +30,28 @@ This README provides instructions on setting up a Nest.js project with a Dockeri
 2. Start the Dockerized Prisma database:
 
    ```bash
-   docker-compose up -d
+   docker-compose up dev-db -d
    ```
 
    This will launch the PostgreSQL database for Prisma in a Docker container.
+## Prisma Setup
+
+1.  
+```bash
+npx prisma migrate dev
+```
+
 
 ## Running the Nest.js Application
-
-1. Start the Nest.js application:
+1. Create .env file and add `DATABASE_URL="postgresql://postgres:password@localhost:5434/nest?schema=public"`
+2. Start the Nest.js application:
 
    ```bash
    npm run start:dev
    ```
 
-2. Access the application at `http://localhost:3000`.
-3. Create .env file and add `DATABASE_URL="postgresql://postgres:password@localhost:5434/nest?schema=public"`
+3. Access the application at `http://localhost:3000`.
+
 ## API Endpoints
 
 The following API endpoints are available:
